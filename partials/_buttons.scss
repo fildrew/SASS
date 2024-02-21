@@ -1,0 +1,14 @@
+$buttons:(
+    b: #0e6cff, 
+    o: #ff8700, 
+    g: #4caf50,
+);
+
+@each $key, $value in $buttons{
+    .butn-#{$key}{
+        background-color: $value ;
+        box-shadow: 0px 5px 10px $value;
+        border: 2px solid $value;
+        color: white;
+    }
+}

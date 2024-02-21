@@ -1,0 +1,34 @@
+$sizes: (
+  xs: 1rem,
+  sm: 2rem,
+  md: 3rem,
+  lg: 4rem,
+  xl: 5rem,
+  xxl: 6rem,
+);
+
+@each $key, $val in $sizes {
+    .padding-#{$key} {
+      padding: $val;
+  
+      &-inline {
+        padding-inline: $val;
+      }
+      &-block {
+        padding-block: $val;
+      }
+    }
+}
+
+@each $key, $val in $sizes {
+    .margin-#{$key} {
+      margin: $val;
+  
+      &-inline {
+        margin-inline: $val;
+      }
+      &-block {
+        margin-block: $val;
+      }
+    }
+}
